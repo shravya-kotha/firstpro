@@ -1,0 +1,28 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<h1>hi</h1>
+{% for i in image %}
+    <img src="{{i.album_logo.url}}"><br>
+{% endfor %}
+
+
+
+{% for vd in videos %}
+<div>
+ <video width="320" height="240" controls>
+  <source src="{{vd.video.url}}" type="video/mp4">
+
+  Your browser does not support the video tag.
+</video>
+<h3> nature video </h3>
+</div>
+
+{% endfor %}
+</body>
+</html>

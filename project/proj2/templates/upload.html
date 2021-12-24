@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>upload video</title>
+</head>
+<body>
+
+<div>
+    <form action="" method="POST"> {% csrf_token %}
+        <input type="text" name="title" placeholder="enter video title">
+        <input type="file" name="video" accept=".mp4*/">
+        <button type="submit">upload new video </button>
+    </form>
+</div>
+</body>
+</html>
